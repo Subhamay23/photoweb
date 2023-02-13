@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+      integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./master/image/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./master/css/master.css" />
+    <title>Subhamay - Gallery</title>
+  </head>
+  <body onload="preLoader()">
+    <div id="preloader">
+      <div class="load">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    </div>
+    <header id="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">Subha<span>may</span></a>
+        </div>
+        <div class="menu">
+          <div class="toggle-btn active">
+            <i class="fa fa-bars"></i>
+          </div>
+          <div class="navbar-menu">
+            <ul class="nav-item active">
+              <li><a href="index.html" class="nav-link nav-hover">Home</a></li>
+              <li>
+                <a href="gallery.html" class="nav-link current-page">Gallery</a>
+              </li>
+              <!-- <li><a href="blog.html" class="nav-link">Blog</a></li> -->
+              <li><a href="about.html" class="nav-link nav-hover">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container">
+      <div class="filter-container">
+        <span class="filter-item active-filter" data-filter="all">all</span>
+        <span class="filter-item" data-filter="landscape">landscape</span>
+        <span class="filter-item" data-filter="macro">marco</span>
+        <!-- <span class="filter-item" data-filter="macro">Other</span> -->
+      </div>
+      <div class="image-gallery gallery">
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/274034043_1095272751261812_3512782866316040039_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=83-p-SyynLEAX9KP3yp&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCiG1Yf8yIbUWqkt9L322BMlJzbLJ9tK9eI_Flj-0H4bg&oe=63EF9A8F"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/274034043_1095272751261812_3512782866316040039_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=83-p-SyynLEAX9KP3yp&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCiG1Yf8yIbUWqkt9L322BMlJzbLJ9tK9eI_Flj-0H4bg&oe=63EF9A8F"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box landscape">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/103918082_710520006403757_8164992126810567078_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0debeb&_nc_ohc=jePl4reK7YkAX8Fmdfa&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCCOx5hprv3CegJF-Ra93KzOjWt6eYfPyJfqW2qFUdQqg&oe=6411F087"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/103918082_710520006403757_8164992126810567078_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0debeb&_nc_ohc=jePl4reK7YkAX8Fmdfa&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCCOx5hprv3CegJF-Ra93KzOjWt6eYfPyJfqW2qFUdQqg&oe=6411F087"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/117781646_745745626214528_3776875177521272621_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=19026a&_nc_ohc=o0E3LDnf28YAX8PpXg-&_nc_ht=scontent.fccu16-1.fna&oh=00_AfA3MZSppUngNa9KcOHbZKLZCzlFpvC8B7IUAIPyrji5Kg&oe=6411D630"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/117781646_745745626214528_3776875177521272621_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=19026a&_nc_ohc=o0E3LDnf28YAX8PpXg-&_nc_ht=scontent.fccu16-1.fna&oh=00_AfA3MZSppUngNa9KcOHbZKLZCzlFpvC8B7IUAIPyrji5Kg&oe=6411D630"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box landscape">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/280116514_1144412199681200_1317467514531214412_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0debeb&_nc_ohc=KEi89gMWKqIAX9Y1EqI&_nc_ht=scontent.fccu16-1.fna&oh=00_AfAzsjZFqSdCse2zHcgPSvR0mg9GFr8pYMWVQlzd0b6lsQ&oe=63EEE509"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/280116514_1144412199681200_1317467514531214412_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0debeb&_nc_ohc=KEi89gMWKqIAX9Y1EqI&_nc_ht=scontent.fccu16-1.fna&oh=00_AfAzsjZFqSdCse2zHcgPSvR0mg9GFr8pYMWVQlzd0b6lsQ&oe=63EEE509"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/329369631_940086420689255_3456023237665836439_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=0f5OnFWQ6YwAX9qioJF&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBKplHxzlZ6Zu3AAEhth9vF2SM95j9ZDstJyBxvqlEWhQ&oe=63EFF6FE"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/329369631_940086420689255_3456023237665836439_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=0f5OnFWQ6YwAX9qioJF&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBKplHxzlZ6Zu3AAEhth9vF2SM95j9ZDstJyBxvqlEWhQ&oe=63EFF6FE"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box landscape">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/299687838_1214494672672952_3819559505570107327_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nkpWTpiJQRUAX8PIr_f&tn=eTQtvhdyfbwidCxZ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfAEz92bWa3PtMUwoNQrxs3xZXNaVN_Ma0v5gTzVPTRcsQ&oe=63EF9D31"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/299687838_1214494672672952_3819559505570107327_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nkpWTpiJQRUAX8PIr_f&tn=eTQtvhdyfbwidCxZ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfAEz92bWa3PtMUwoNQrxs3xZXNaVN_Ma0v5gTzVPTRcsQ&oe=63EF9D31"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/312027031_1258506218271797_5446595467063949730_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=4HB1AstF7toAX84GZpY&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCyBYUoQQR4xIzKxqetCXh3Y0U4C7OVJjf93bBelVdcww&oe=63EFEE24"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/312027031_1258506218271797_5446595467063949730_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=4HB1AstF7toAX84GZpY&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCyBYUoQQR4xIzKxqetCXh3Y0U4C7OVJjf93bBelVdcww&oe=63EFEE24"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box landscape">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/291395068_1185355788920174_451040099450721318_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_ohc=fez-kWPm-FgAX8xmx3-&_nc_ht=scontent.fccu16-1.fna&oh=00_AfAehwbs58azcwHR5UC_WffBPbHfRezPslP3MQ-tXCbFqw&oe=63EE6EDD"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/291395068_1185355788920174_451040099450721318_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_ohc=fez-kWPm-FgAX8xmx3-&_nc_ht=scontent.fccu16-1.fna&oh=00_AfAehwbs58azcwHR5UC_WffBPbHfRezPslP3MQ-tXCbFqw&oe=63EE6EDD"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/292201241_1188765825245837_6721701899639201846_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0debeb&_nc_ohc=9NLEUVcl5cUAX9753jH&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBN46CkVSEqLKrcUdxikoR7KX1CIw8M4Hry0121qyNgZA&oe=63EECE57"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/292201241_1188765825245837_6721701899639201846_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0debeb&_nc_ohc=9NLEUVcl5cUAX9753jH&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBN46CkVSEqLKrcUdxikoR7KX1CIw8M4Hry0121qyNgZA&oe=63EECE57"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box landscape">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/279057084_1136046260517794_507209842775218292_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=HegXlcs-6vYAX9xVau2&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBIzsd4VGTXeiRaQVsmx1PGGq3gYN29YYOWg4Mz1INBSw&oe=63EF85F9"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/279057084_1136046260517794_507209842775218292_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=HegXlcs-6vYAX9xVau2&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBIzsd4VGTXeiRaQVsmx1PGGq3gYN29YYOWg4Mz1INBSw&oe=63EF85F9"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/167343625_901849033937519_525269845973456459_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=19026a&_nc_ohc=1KRBEFRUdlwAX-uZZ5s&tn=eTQtvhdyfbwidCxZ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBdFf58Zi5OAEPdJlrYW4SruPaW6JOpQAUkXMr71dwcBQ&oe=6411FEF7"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/167343625_901849033937519_525269845973456459_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=19026a&_nc_ohc=1KRBEFRUdlwAX-uZZ5s&tn=eTQtvhdyfbwidCxZ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBdFf58Zi5OAEPdJlrYW4SruPaW6JOpQAUkXMr71dwcBQ&oe=6411FEF7"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box landscape">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/329453833_719798952848024_6322664653951496211_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_ohc=KjlGu2GKapkAX9aEPSQ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCcofBdFfq7wwNQVk0Hh9aUxwZTc9yKA7OpmBt-qCGhzw&oe=63EF4D1A"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/329453833_719798952848024_6322664653951496211_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_ohc=KjlGu2GKapkAX9aEPSQ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCcofBdFfq7wwNQVk0Hh9aUxwZTc9yKA7OpmBt-qCGhzw&oe=63EF4D1A"
+              alt=""
+            />
+          </a>
+        </div>
+        <!--  -->
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/329762324_1820704298314370_8442864250304111802_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0debeb&_nc_ohc=GE7ephzfyUMAX9Nd7Hb&_nc_ht=scontent.fccu16-1.fna&oh=00_AfB82Q-OJROOBeLMreB1B9QWHqwf1Xs_IZ2aqULcJ6jtCg&oe=63EEBEE3"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/329762324_1820704298314370_8442864250304111802_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0debeb&_nc_ohc=GE7ephzfyUMAX9Nd7Hb&_nc_ht=scontent.fccu16-1.fna&oh=00_AfB82Q-OJROOBeLMreB1B9QWHqwf1Xs_IZ2aqULcJ6jtCg&oe=63EEBEE3"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box landscape">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/278901281_1134789823976771_7132345572157697105_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_ohc=AWpkADlSu8EAX95j381&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCJqzPWTl-LtALnA2GEHnUtT43d1Rq0hlZHYuzpFvKcZg&oe=63EF74BF"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/278901281_1134789823976771_7132345572157697105_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_ohc=AWpkADlSu8EAX95j381&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCJqzPWTl-LtALnA2GEHnUtT43d1Rq0hlZHYuzpFvKcZg&oe=63EF74BF"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/118006431_754984955290595_1005179751184404201_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0debeb&_nc_ohc=ECLWAuEPFPYAX_IRpsI&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCVvm1JFVZzCjlakUjh2-1r0a_w2eyigf4YdSv-bnZDtg&oe=6411DA2B"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/118006431_754984955290595_1005179751184404201_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0debeb&_nc_ohc=ECLWAuEPFPYAX_IRpsI&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCVvm1JFVZzCjlakUjh2-1r0a_w2eyigf4YdSv-bnZDtg&oe=6411DA2B"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box landscape">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/119214720_769430833846007_7251280508709686320_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_ohc=nroeXrfEb9UAX8tjHkq&tn=eTQtvhdyfbwidCxZ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBZlqO1bfwtXI4Mj917V51jUgefr5XniAZM8tTNRgSlYA&oe=6411E079"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/119214720_769430833846007_7251280508709686320_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_ohc=nroeXrfEb9UAX8tjHkq&tn=eTQtvhdyfbwidCxZ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBZlqO1bfwtXI4Mj917V51jUgefr5XniAZM8tTNRgSlYA&oe=6411E079"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/286175136_1165087260947027_7109570418921535473_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=rD8xQcJWWp8AX_D_U-6&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCPk9D-jYzO_o1I203y3yfulpakhMwxTLcJcv9-KEi6og&oe=63EFB14B"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/286175136_1165087260947027_7109570418921535473_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=rD8xQcJWWp8AX_D_U-6&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCPk9D-jYzO_o1I203y3yfulpakhMwxTLcJcv9-KEi6og&oe=63EFB14B"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box landscape">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/299282896_1214494282672991_191791265649548305_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=3RpazInHlukAX-ezEc1&_nc_ht=scontent.fccu16-1.fna&oh=00_AfDV3nGYESX4Y37djxXBcVFXh6-VUYO4O2zCpgENLVYVlQ&oe=63F06159"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/299282896_1214494282672991_191791265649548305_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=3RpazInHlukAX-ezEc1&_nc_ht=scontent.fccu16-1.fna&oh=00_AfDV3nGYESX4Y37djxXBcVFXh6-VUYO4O2zCpgENLVYVlQ&oe=63F06159"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/282006215_1153686298753790_7414489986258311691_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0debeb&_nc_ohc=7tkhckUOWOAAX-_L_73&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCOdP3W2Q-V5OARmROjxKw9AcjuUXfOAaVcYTaTZKg0lQ&oe=63EE76CD"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/282006215_1153686298753790_7414489986258311691_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0debeb&_nc_ohc=7tkhckUOWOAAX-_L_73&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCOdP3W2Q-V5OARmROjxKw9AcjuUXfOAaVcYTaTZKg0lQ&oe=63EE76CD"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box landscape">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/277176943_1121942815261472_7972044455269543019_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_ohc=GABvtK-YeZEAX__GCIc&_nc_ht=scontent.fccu16-1.fna&oh=00_AfClOSuQWUXVu9B2Vtcc6OkFmUVwoikuHveTcZ-pFgvMag&oe=63EFDF07"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/277176943_1121942815261472_7972044455269543019_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_ohc=GABvtK-YeZEAX__GCIc&_nc_ht=scontent.fccu16-1.fna&oh=00_AfClOSuQWUXVu9B2Vtcc6OkFmUVwoikuHveTcZ-pFgvMag&oe=63EFDF07"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/251342714_1031609920961429_5174003779798498804_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_ohc=lN1DbF7sXqQAX-tqBh0&_nc_ht=scontent.fccu16-1.fna&oh=00_AfD92uBZtpglCndSPra7l3GD3xsRO7BHO9TQCLQFMZy56w&oe=63F057DC"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/251342714_1031609920961429_5174003779798498804_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_ohc=lN1DbF7sXqQAX-tqBh0&_nc_ht=scontent.fccu16-1.fna&oh=00_AfD92uBZtpglCndSPra7l3GD3xsRO7BHO9TQCLQFMZy56w&oe=63F057DC"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box landscape">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/84499461_615609145894844_954353767669563392_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0debeb&_nc_ohc=sFNjn0JvSfgAX8ViH3G&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCt9i755-TrtSL5C17BFBnMDKiXs-0vPWZnux6VA7biSg&oe=6411E2F0"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/84499461_615609145894844_954353767669563392_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0debeb&_nc_ohc=sFNjn0JvSfgAX8ViH3G&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCt9i755-TrtSL5C17BFBnMDKiXs-0vPWZnux6VA7biSg&oe=6411E2F0"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/114585618_735445497244541_3600259685357433860_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_ohc=W9dbH2QGmrcAX_dvVX6&_nc_ht=scontent.fccu16-1.fna&oh=00_AfA3b27Q8AOhVWaD-ppyRtHikiKjZBNhRIsQe6GdqdmQkQ&oe=6411F8FA"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/114585618_735445497244541_3600259685357433860_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_ohc=W9dbH2QGmrcAX_dvVX6&_nc_ht=scontent.fccu16-1.fna&oh=00_AfA3b27Q8AOhVWaD-ppyRtHikiKjZBNhRIsQe6GdqdmQkQ&oe=6411F8FA"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/329408236_524718056317448_2276904598789330752_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_ohc=QrrI6_yu9PYAX8tyG3U&_nc_ht=scontent.fccu16-1.fna&oh=00_AfD3aTR7mqNuxq53PzTICQRZX-0sj7y19bXlS2vTkJfJpw&oe=63EEA344"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/329408236_524718056317448_2276904598789330752_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_ohc=QrrI6_yu9PYAX8tyG3U&_nc_ht=scontent.fccu16-1.fna&oh=00_AfD3aTR7mqNuxq53PzTICQRZX-0sj7y19bXlS2vTkJfJpw&oe=63EEA344"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/329995959_574933694269266_7180410409097012974_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_ohc=GkU4-E7khacAX8IX_c4&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCQ69uGuFd8qIqv19tX7iTRLm8NmEGHb1I59lzxB7-t9g&oe=63F01EDC"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/329995959_574933694269266_7180410409097012974_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_ohc=GkU4-E7khacAX8IX_c4&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCQ69uGuFd8qIqv19tX7iTRLm8NmEGHb1I59lzxB7-t9g&oe=63F01EDC"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/329577236_498250769178997_6218062763791171855_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0debeb&_nc_ohc=y7uF83UAwUAAX8NwJXt&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCKItmpcy9ySZrdgqYBCF7LAEQIqfmA_XLdDobRKN_Faw&oe=63EE9316"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/329577236_498250769178997_6218062763791171855_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0debeb&_nc_ohc=y7uF83UAwUAAX8NwJXt&_nc_ht=scontent.fccu16-1.fna&oh=00_AfCKItmpcy9ySZrdgqYBCF7LAEQIqfmA_XLdDobRKN_Faw&oe=63EE9316"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/299205225_1215724035883349_8637915625473619038_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0debeb&_nc_ohc=j0gzGmB-_dYAX-qeAZJ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfDTugUbFT-G3iFZ5NVnlmSkIESK3rNzbU0deFaDY_EOfg&oe=63EF1BC3"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/299205225_1215724035883349_8637915625473619038_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0debeb&_nc_ohc=j0gzGmB-_dYAX-qeAZJ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfDTugUbFT-G3iFZ5NVnlmSkIESK3rNzbU0deFaDY_EOfg&oe=63EF1BC3"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/299828301_1215723715883381_9121662713587788535_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=ZQeHpL-JsjkAX-CyP2A&_nc_ht=scontent.fccu16-1.fna&oh=00_AfDH7_C_qYxgN5gjMsYGW17nM4WkzyxqIa-IH2k1GdcX-A&oe=63EE813B"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/299828301_1215723715883381_9121662713587788535_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=ZQeHpL-JsjkAX-CyP2A&_nc_ht=scontent.fccu16-1.fna&oh=00_AfDH7_C_qYxgN5gjMsYGW17nM4WkzyxqIa-IH2k1GdcX-A&oe=63EE813B"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/285816734_1165087150947038_7517703112481973273_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=6BiaYTT2e0YAX_I5JK2&_nc_ht=scontent.fccu16-1.fna&oh=00_AfAUx5feMmPdm4wgZdTO0GXXd9kvEVAw8bc0nPjTi9m7BQ&oe=63EFE7D2"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/285816734_1165087150947038_7517703112481973273_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=6BiaYTT2e0YAX_I5JK2&_nc_ht=scontent.fccu16-1.fna&oh=00_AfAUx5feMmPdm4wgZdTO0GXXd9kvEVAw8bc0nPjTi9m7BQ&oe=63EFE7D2"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/285758203_1165086957613724_4515830947451073474_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=7D2uH41jM_oAX-bOoHb&_nc_ht=scontent.fccu16-1.fna&oh=00_AfAtzrQouJCq0S7S0DMAJ4ELwvnG1h_1TVU0Sihfx4tNFw&oe=63EED481"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/285758203_1165086957613724_4515830947451073474_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=7D2uH41jM_oAX-bOoHb&_nc_ht=scontent.fccu16-1.fna&oh=00_AfAtzrQouJCq0S7S0DMAJ4ELwvnG1h_1TVU0Sihfx4tNFw&oe=63EED481"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/284142728_1163002381155515_4649566564661011371_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=Cq-7lCew3r4AX8OMuMx&_nc_ht=scontent.fccu16-1.fna&oh=00_AfA8E3aHKzvn_5NM-qWymQrDuSzvh6YI8IecTeF--11uhw&oe=63EFB371"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/284142728_1163002381155515_4649566564661011371_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=Cq-7lCew3r4AX8OMuMx&_nc_ht=scontent.fccu16-1.fna&oh=00_AfA8E3aHKzvn_5NM-qWymQrDuSzvh6YI8IecTeF--11uhw&oe=63EFB371"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/283370619_1158953371560416_6051247406509289729_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_ohc=_0hRCEJTqKIAX8mRx5b&_nc_ht=scontent.fccu16-1.fna&oh=00_AfB1OolzQrUMTusVBO2OPFtlLFoNhNmw35ykm2sqmmNUlw&oe=63EF56C9"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/283370619_1158953371560416_6051247406509289729_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_ohc=_0hRCEJTqKIAX8mRx5b&_nc_ht=scontent.fccu16-1.fna&oh=00_AfB1OolzQrUMTusVBO2OPFtlLFoNhNmw35ykm2sqmmNUlw&oe=63EF56C9"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/279019573_1137131707075916_3925332852211198838_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0debeb&_nc_ohc=jkP9QD_6N74AX-r-SrW&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBrPzUE1BVhQqeOff5jmyJt9XBsmXB7xAVBVzpTpeOiSw&oe=63F00168"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/279019573_1137131707075916_3925332852211198838_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0debeb&_nc_ohc=jkP9QD_6N74AX-r-SrW&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBrPzUE1BVhQqeOff5jmyJt9XBsmXB7xAVBVzpTpeOiSw&oe=63F00168"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/275304877_1108918266563927_996922592758523897_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0debeb&_nc_ohc=ALTRPxP_O2cAX9NwO9s&tn=eTQtvhdyfbwidCxZ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBB55C9SvLeCXxHhj85tEZC6zoKwhxVwGPz7vVGplykoA&oe=63EECFE7"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/275304877_1108918266563927_996922592758523897_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0debeb&_nc_ohc=ALTRPxP_O2cAX9NwO9s&tn=eTQtvhdyfbwidCxZ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfBB55C9SvLeCXxHhj85tEZC6zoKwhxVwGPz7vVGplykoA&oe=63EECFE7"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/273175984_1087703972018690_3422958557141234688_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=19026a&_nc_ohc=a1a6zLVHwJEAX8T2wv4&_nc_ht=scontent.fccu16-1.fna&oh=00_AfAYywLzHawRtdlIJx_eRRvoILAHgk1EMWEs9zt_LCftjA&oe=63F0538B"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t39.30808-6/273175984_1087703972018690_3422958557141234688_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=19026a&_nc_ohc=a1a6zLVHwJEAX8T2wv4&_nc_ht=scontent.fccu16-1.fna&oh=00_AfAYywLzHawRtdlIJx_eRRvoILAHgk1EMWEs9zt_LCftjA&oe=63F0538B"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="lightgallery" class="image-box macro">
+          <a
+            href="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/117597175_743517503104007_7042523311692511879_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_ohc=-HeHupsnODwAX8712AY&tn=eTQtvhdyfbwidCxZ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfACoKFsEbHQTHT6VqxhY91Czdwo9LWHxxQiXdZG-BAmsQ&oe=6411FA10"
+          >
+            <img
+              src="https://scontent.fccu16-1.fna.fbcdn.net/v/t1.6435-9/117597175_743517503104007_7042523311692511879_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0debeb&_nc_ohc=-HeHupsnODwAX8712AY&tn=eTQtvhdyfbwidCxZ&_nc_ht=scontent.fccu16-1.fna&oh=00_AfACoKFsEbHQTHT6VqxhY91Czdwo9LWHxxQiXdZG-BAmsQ&oe=6411FA10"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="top-icon">
+      <a href="#top"><i class="fa fa-angle-up"></i></a>
+    </section>
+    <footer class="footer-container">
+      <div class="top-footer">
+        <div class="footer-link-icon">
+          <a
+            href="https://www.facebook.com/subhamay.debnath.522/"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/subhamay2331/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/SubhamayDebnat6" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/subhamay-debnath-041485247/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="index.html"><i class="fa-brands fa-discord"></i></a>
+          <a href="https://github.com/Subhamay-Debnath" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <span
+          >Made with <i class="fa-solid fa-heart"></i> by
+          <a href="">Subhamay</a>
+        </span>
+        <p>All Right Reserved-2023</p>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+      integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./master/owl/owl.carousel.min.js"></script>
+    <script src="./master/js/master.js"></script>
+  </body>
+</html>
